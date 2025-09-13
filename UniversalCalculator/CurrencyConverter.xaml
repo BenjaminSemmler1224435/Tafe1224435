@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="Calculator.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Page.Resources>
+		<Style TargetType="TextBlock">
+			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="Padding" Value="10" />
+			<Setter Property="Margin" Value="10" />
+			<Setter Property="MinWidth" Value="100" />
+		</Style>
+		<Style TargetType="Button">
+			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="Padding" Value="10" />
+			<Setter Property="Margin" Value="10" />
+			<Setter Property="MinWidth" Value="100" />
+		</Style>
+	</Page.Resources>
+
+	<Grid Background="FloralWhite">
+		<StackPanel>
+			<StackPanel MinWidth="1280" Height="100" VerticalAlignment="Top">
+				<TextBlock Text="Currency Conversion Calculator" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center" Width="1110">
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Amount$" Margin="45,0,0,0" FontSize="25"/>
+					<TextBlock Text="From" Margin="325,0,0,0" FontSize="25"/>
+					<TextBlock Text="To" Margin="310,0,0,0" FontSize="25"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<TextBox x:Name="inputAmount" Margin="50,0,0,0" TextWrapping="Wrap" Text="" Width="122" Height="30" PlaceholderText="Enter amount"/>
+					<ComboBox x:Name="typeFrom" Margin="279,0,0,0" Width="190" SelectedIndex="0" >
+						<x:String>USD - US Dollar</x:String>
+						<x:String>Euro</x:String>
+						<x:String>British</x:String>
+						<x:String>Indian Rupee</x:String>
+					</ComboBox>
+					<ComboBox x:Name="typeTo" Margin="200,0,0,0" Width="190" SelectedIndex="0" >
+						<x:String>USD - US Dollar</x:String>
+						<x:String>Euro</x:String>
+						<x:String>British Pound</x:String>
+						<x:String>Indian Rupee</x:String>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Height="30">
+					
+				</StackPanel>
+				<StackPanel RequestedTheme="Light">
+					<TextBox x:Name="amountTextBox" FontSize="20" IsReadOnly="True" AcceptsReturn="True" Background="FloralWhite"/>
+				</StackPanel>
+				<StackPanel Height="30">
+
+				</StackPanel>
+				<StackPanel RequestedTheme="Light">
+					<TextBox x:Name="convertedTextBox" FontSize="20" FontWeight="Bold" IsReadOnly="True" AcceptsReturn="True" Background="FloralWhite"/>
+				</StackPanel>
+				<StackPanel Height="30">
+
+				</StackPanel>
+				<StackPanel RequestedTheme="Light">
+					<TextBox x:Name="conversion1TextBox" FontSize="17" IsReadOnly="True" AcceptsReturn="True" Background="FloralWhite"/>
+				</StackPanel>
+				<StackPanel Height="30">
+
+				</StackPanel>
+				<StackPanel RequestedTheme="Light">
+					<TextBox x:Name="conversion2TextBox" FontSize="17" IsReadOnly="True" AcceptsReturn="True" Background="FloralWhite"/>
+				</StackPanel>
+				<StackPanel HorizontalAlignment="Center">
+					<Button x:Name="calculateButton" Content="Calculate Currency" FontSize="15" Background="Lavender" BorderBrush="DarkSlateBlue" Height="55" Width="200" Click="calculateButton_Click"/>
+				</StackPanel>
+				<StackPanel HorizontalAlignment="Center">
+					<Button x:Name="exitButton" Content="Exit" FontSize="15" Background="Lavender" BorderBrush="DarkSlateBlue" Height="55" Width="200" Click="exitButton_Click"/>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel>
+				
+			</StackPanel>
+		</StackPanel>
+
+	</Grid>
+</Page>
