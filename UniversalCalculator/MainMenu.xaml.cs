@@ -44,5 +44,14 @@ namespace Calculator
 			titleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
 			titleBar.ButtonInactiveForegroundColor = Windows.UI.Colors.White;
 		}
+
+		private void MortgageCalcButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame menuFrame = new Frame();
+
+			menuFrame.Navigate(typeof(MortgageCalculator));
+
+			Window.Current.Content = menuFrame;
+		}
 	}
 }
