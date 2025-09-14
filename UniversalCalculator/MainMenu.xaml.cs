@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -69,5 +70,11 @@ namespace Calculator
 
 			Window.Current.Content = menuFrame;
 		}
-	}
+
+		private async void TripCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			var dialog = new MessageDialog("Trip calculator C# code will be developed later.");
+			await dialog.ShowAsync();
+		}
+    }
 }

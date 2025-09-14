@@ -34,19 +34,6 @@ namespace Calculator
 		 {
 			double input;
 			double final;
-			double one = 1;
-			double usdToEuro = 0.85189982;
-			double usdToPound = 0.72872436;
-			double usdToRupee = 74.257327;
-			double euroToUSD = 1.1739732;
-			double euroToPound = 0.8556672;
-			double euroToRupee = 87.00755;
-			double poundToUSD = 1.371907;
-			double poundToEuro = 1.1686692;
-			double poundToRupee = 101.68635;
-			double rupeeToUSD = 0.011492628;
-			double rupeeToEuro = 0.013492774;
-			double rupeeToPound = 0.0098339397;
 
 
 			try
