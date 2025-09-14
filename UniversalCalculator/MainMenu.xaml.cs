@@ -45,19 +45,26 @@ namespace Calculator
 			titleBar.ButtonInactiveForegroundColor = Windows.UI.Colors.White;
 		}
 
-		private void MortgageCalcButton_Click(object sender, RoutedEventArgs e)
+		//Navigate to the original simple calculator
+		private void MathCalcButton_Click(object sender, RoutedEventArgs e)
 		{
 			Frame menuFrame = new Frame();
-
-			menuFrame.Navigate(typeof(MortgageCalculator));
-
+			menuFrame.Navigate(typeof(MainPage));
 			Window.Current.Content = menuFrame;
 		}
 
+		//Navigate to the mortgage calculator
+		private void MortgageCalcButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame menuFrame = new Frame();
+			menuFrame.Navigate(typeof(MortgageCalculator));
+			Window.Current.Content = menuFrame;
+		}
+
+		//Navigate to the currency converter
 		private void CurrencyCalcButton_Click(object sender, RoutedEventArgs e)
 		{
 			Frame menuFrame = new Frame();
-
 			menuFrame.Navigate(typeof(CurrencyConverter));
 
 			Window.Current.Content = menuFrame;

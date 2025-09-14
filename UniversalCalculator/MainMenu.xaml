@@ -12,7 +12,7 @@
 	<Grid>
 		<Image HorizontalAlignment="right" Height="188" Margin="0,25,25,0" VerticalAlignment="Top" Width="278" Source="/Assets/abacus.jpg"/>
 		<TextBlock HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" Text="Universal Calculator" VerticalAlignment="Top" FontSize="72"/>
-        <Button x:Name="MathCalcButton" Content="Math Calculator" Margin="0,300,0,0" VerticalAlignment="Top" Height="114" Width="366" HorizontalAlignment="Center" FontSize="36"/>
+        <Button x:Name="MathCalcButton" Content="Math Calculator" Margin="0,300,0,0" VerticalAlignment="Top" Height="114" Width="366" HorizontalAlignment="Center" FontSize="36" Click="MathCalcButton_Click"/>
         <Button x:Name="MortgageCalcButton" Content="Mortgage Calculator" Margin="0,450,0,0" VerticalAlignment="Top" Height="114" Width="366" HorizontalAlignment="Center" FontSize="36" Click="MortgageCalcButton_Click"/>
         <Button x:Name="CurrencyCalcButton" Content="Currency Calculator" Margin="0,600,0,0" VerticalAlignment="Top" Height="114" Width="366" HorizontalAlignment="Center" FontSize="36" Click="CurrencyCalcButton_Click"/>
 		<Button x:Name="ExitButton" Content="Exit" Margin="0,750,0,0" VerticalAlignment="Top" Height="114" Width="366" HorizontalAlignment="Center" FontSize="36"/>
