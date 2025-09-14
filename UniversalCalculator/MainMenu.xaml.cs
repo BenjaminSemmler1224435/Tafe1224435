@@ -53,5 +53,14 @@ namespace Calculator
 
 			Window.Current.Content = menuFrame;
 		}
+
+		private void CurrencyCalcButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame menuFrame = new Frame();
+
+			menuFrame.Navigate(typeof(CurrencyConverter));
+
+			Window.Current.Content = menuFrame;
+		}
 	}
 }
